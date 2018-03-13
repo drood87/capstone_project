@@ -1,0 +1,58 @@
+/*===============*/
+/*global styles*/
+/*===============*/
+
+body {
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*===============*/
+/*header*/
+/*===============*/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 64px;
+}
+
+header .logo {
+	display: flex;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	margin-right: 24px;
+}
+
+ul li  {
+	margin-left: 16px;
+	text-decoration: none;
+	color: #000;
+}
+
+ul li:hover {
+	background-color: blue;
+}
+
+a {
+	text-decoration: none;
+}
+
+#logoimg {
+	margin-left: 24px;
+	height: 40px;
+}
+
+.colmar {
+	font-weight: 500;
+}
+
+.academy {
+	color: grey;
+}
+
+
+
