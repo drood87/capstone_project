@@ -29,12 +29,16 @@ nav ul {
 
 ul li  {
 	margin-left: 16px;
+	padding: 23px;
 	text-decoration: none;
 	color: #000;
+	transition: background-color 500ms ease-in-out,
+				color 500ms ease-in-out;
 }
 
 ul li:hover {
 	background-color: blue;
+	color: #fff;
 }
 
 a {
@@ -54,5 +58,29 @@ a {
 	color: grey;
 }
 
+.navItem {
+
+}
+
+/*===============*/
+/*bannersection*/
+/*===============*/
+section {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-color: grey;
+}
+
+.banner {
+	width: 60%;
+	margin: 24px 32px;
+}
+
+.bannerText h1 {
+	font-size: 4rem;
+	font-weight: 700;
+}
+ 
 
 
