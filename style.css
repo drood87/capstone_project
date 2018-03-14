@@ -55,7 +55,7 @@ a {
 }
 
 .academy {
-	color: grey;
+	color: #b3b3b3;
 }
 
 .navItem {
@@ -65,11 +65,14 @@ a {
 /*===============*/
 /*bannersection*/
 /*===============*/
-section {
+section {	
+	background-color: #e6e6e6;
+}
+
+.bannerSection {
 	display: flex;
-	align-items: center;
 	width: 100%;
-	background-color: grey;
+	align-items: center;
 }
 
 .banner {
@@ -77,10 +80,48 @@ section {
 	margin: 24px 32px;
 }
 
+.bannerText {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
 .bannerText h1 {
-	font-size: 4rem;
+	font-size: 3.7rem;
 	font-weight: 700;
+	margin-left: 24px;
+	color: #737373;
+	word-spacing: 0.05em;
+	letter-spacing: 0.01em;
+	line-height: 1.4;
+}
+
+.bannerText h2 {
+	margin-top: 25px;
+	font-size: 2rem;
+	margin-left: 24px;
+	font-weight: 500;
+	color: #737373;
+	word-spacing: 0.05em;
+	letter-spacing: 0.01em;
+	line-height: 1.4;
+}
+
+.bannerText button {
+	width: 60%;
+	margin: 25px auto;
+	padding: 20px 0 20px 0;
+	background-color: #80bfff;
+	border: 0;
+	color: #fff;
+	font-size: 1rem; 
+	transition: background-color 300ms ease-in-out;
+}
+
+.bannerText button:hover {
+	background-color: #4da6ff;
 }
  
+
 
 
