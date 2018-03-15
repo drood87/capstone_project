@@ -65,7 +65,7 @@ a {
 /*===============*/
 /*bannersection*/
 /*===============*/
-section {	
+#bannerId {	
 	background-color: #e6e6e6;
 }
 
@@ -116,11 +116,49 @@ section {
 	color: #fff;
 	font-size: 1rem; 
 	transition: background-color 300ms ease-in-out;
+	cursor: pointer;
 }
 
 .bannerText button:hover {
 	background-color: #4da6ff;
 }
+
+/*===============*/
+/*Information Section*/
+/*===============*/
+
+#information {
+	display: flex;
+}
+
+.infoSection {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin: 32px 32px;
+}
+
+.infoAsideBlocks {
+	display: flex;
+}
+
+.asideInfo {
+	margin-top: 32px;
+	width: 40%;
+}
+
+.infoDescription {
+	align-self: center;
+	width: 65%;
+}
+
+.infoBlockAsidePic {
+	height: auto;
+	width: 35%;
+}
+
+
+
  
 
 
