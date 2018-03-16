@@ -4,7 +4,7 @@
 
 body {
 	font-size: 18px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', 'Roboto', sans-serif;
 	word-spacing: 0.05em;
 	letter-spacing: 0.03em;
 	line-height: 1.4;
@@ -76,7 +76,7 @@ a {
 
 .bannerSection {
 	display: flex;
-	width: 100%;
+	/*width: 100%;*/
 	align-items: center;
 }
 
@@ -139,7 +139,7 @@ a {
 
 .infoAsideBlocks {
 	display: flex;
-	align-items: auto;
+	/*flex: 0 1 auto;*/
 }
 
 .asideInfo {
@@ -167,6 +167,7 @@ a {
 	height: auto;
 	width: 35%;
 	padding: 0px 16px 16px 16px;
+	flex: 1;
 }
 
 .guestLecture {
@@ -195,6 +196,15 @@ a {
 	font-weight: 500;
 	margin-bottom: 32px;
 }
+
+/*.picture-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+.picture-container img {
+	max-width: 35%;
+}*/
 
 
 
