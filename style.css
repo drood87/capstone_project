@@ -173,6 +173,7 @@ a {
 .guestLecture {
 	background-color: #e6e6e6;
 	padding-top: 16px;
+	margin-bottom: 32px;
 }
 
 .infoOneTwo {
@@ -205,6 +206,38 @@ a {
 .picture-container img {
 	max-width: 35%;
 }*/
+
+/*===============*/
+/*Courses        */
+/*===============*/
+
+#courses {
+	background-color: #e6e6e6;
+}
+
+#courses h2 {
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+.courseBannerImages {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.courseImageContainer {
+	background-color: #FFF;
+	max-width: 532px;
+}
+
+.img.courseInformation {
+	max-width: 100%;
+	
+}
+
+
 
 
 
