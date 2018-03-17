@@ -137,6 +137,15 @@ a {
 	margin: 32px 32px;
 }
 
+.asideImg{
+	width: 35%;
+	padding: 0 16px;
+}
+
+.asideImg img {
+	width: 100%;
+}
+
 .infoAsideBlocks {
 	display: flex;
 	/*flex: 0 1 auto;*/
@@ -151,6 +160,7 @@ a {
 .infoDescription {
 	align-self: center;
 	width: 50%;
+
 }
 
 .infoDescription h4 {
@@ -161,19 +171,6 @@ a {
 
 .infoDescription p {
 	margin-bottom: 8px;
-}
-
-.infoBlockAsidePic {
-	height: auto;
-	width: 35%;
-	padding: 0px 16px 16px 16px;
-	flex: 1;
-}
-
-.guestLecture {
-	background-color: #e6e6e6;
-	padding-top: 16px;
-	margin-bottom: 32px;
 }
 
 .infoOneTwo {
@@ -219,6 +216,8 @@ a {
 	text-align: center;
 	font-size: 2.5rem;
 	font-weight: 600;
+	color: #737373;
+	padding-top: 32px;
 }
 
 .courseBannerImages {
@@ -230,12 +229,63 @@ a {
 .courseImageContainer {
 	background-color: #FFF;
 	max-width: 532px;
+	margin: 32px 0 32px 0;
 }
 
-.img.courseInformation {
-	max-width: 100%;
-	
+/*===============*/
+/*History        */
+/*===============*/
+
+.historySection h2 {
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #737373;
+	padding: 32px 0 32px 0;
 }
+
+video {
+	width: 100%;
+	margin: 0 24px;
+}
+
+
+.video {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+.videoContainer {
+	display: flex;
+}
+
+.asideVideoBlock {
+	display: flex;
+	transition: background-color 750ms ease-in-out;
+}
+
+.asideVideoBlock:hover {
+	background-color: #a6a6a6;
+}
+
+.asideVideoDescription {
+	align-self: center;
+}
+
+.videoAsideContainer {
+	margin-left: 32px;
+}
+
+.asideVideoImg {
+	padding: 16px;
+	width: 35%;
+}
+
+.asideVideoImg img {
+	width: 100%;
+}
+
 
 
 
