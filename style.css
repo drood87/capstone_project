@@ -77,13 +77,16 @@ a {
 
 .bannerSection {
 	display: flex;
-	/*width: 100%;*/
 	align-items: center;
 }
 
-.banner {
+.bannerImgContainer {
 	width: 60%;
 	margin: 24px 32px;
+}
+
+.banner {
+	width: 100%;
 }
 
 .bannerText {
@@ -134,13 +137,22 @@ a {
 .infoSection {
 	display: flex;
 	flex-direction: column;
-	width: 60%;
+	width: 65%;
 	margin: 32px 32px;
+}
+
+.infoImgContainer,
+.infoContainer {
+	width: 100%;
+}
+
+.infoMainPic {
+	width: 100%;
 }
 
 .asideImg{
 	width: 35%;
-	padding: 0 16px;
+	/*padding: 0 16px;*/
 }
 
 .asideImg img {
@@ -149,7 +161,11 @@ a {
 
 .infoAsideBlocks {
 	display: flex;
-	/*flex: 0 1 auto;*/
+	transition: background-color 750ms ease-in-out;
+}
+
+.infoAsideBlocks:hover {
+	background-color: #a6a6a6; 
 }
 
 .asideInfo {
@@ -161,7 +177,6 @@ a {
 .infoDescription {
 	align-self: center;
 	width: 50%;
-
 }
 
 .infoDescription h4 {
@@ -174,8 +189,8 @@ a {
 	margin-bottom: 8px;
 }
 
-.infoOneTwo {
-	margin-bottom: 16px;
+.asideImg {
+	margin: 16px;
 }
 
 .infoSection h2 {
@@ -222,6 +237,15 @@ a {
 	background-color: #FFF;
 	max-width: 532px;
 	margin: 32px 0 32px 0;
+}
+
+.courseInformation h4 {
+	font-weight: 500;
+	padding: 16px;
+}
+
+.courseInformation p {
+	padding: 16px;
 }
 
 /*===============*/
