@@ -8,6 +8,7 @@ body {
 	word-spacing: 0.05em;
 	letter-spacing: 0.03em;
 	line-height: 1.4;
+	color: #737373;
 }
 
 /*.siteContainer {
@@ -195,15 +196,6 @@ a {
 	margin-bottom: 32px;
 }
 
-/*.picture-container {
-	width: 100%;
-	overflow: hidden;
-}
-
-.picture-container img {
-	max-width: 35%;
-}*/
-
 /*===============*/
 /*Courses        */
 /*===============*/
@@ -244,9 +236,21 @@ a {
 	padding: 32px 0 32px 0;
 }
 
-video {
+video,
+.videoParagraph {
 	width: 100%;
 	margin: 0 24px;
+}
+
+.videoParagraph h4 {
+	font-size: 1.9rem;
+	font-weight: 900;
+	margin: 24px 0 8px 0;
+}
+
+.videoParagraph p {
+	margin-bottom: 32px;
+ 	font-size: 1.5rem
 }
 
 
@@ -273,6 +277,16 @@ video {
 	align-self: center;
 }
 
+.asideVideoDescription h5 {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.asideVideoDescription p {
+	font-size: 1.1rem;
+	margin: 16px 0 16px 0;
+}
+
 .videoAsideContainer {
 	margin-left: 32px;
 }
@@ -285,6 +299,29 @@ video {
 .asideVideoImg img {
 	width: 100%;
 }
+
+/*===============*/
+/*Footer         */
+/*===============*/
+
+footer {
+	display: flex;
+	border-top: 1px solid #a6a6a6;
+	justify-content: space-between;
+	height: 64px;
+}
+
+footer p,
+.links {
+	font-size: 0.9rem;
+	padding: 16px 24px 0 24px;
+}
+
+.links a{
+	margin-right: 16px;
+}
+
+
 
 
 
