@@ -67,6 +67,36 @@ a {
 	color: #b3b3b3;
 }
 
+.forMobileSvgs {
+	display: none;
+}
+
+@media all and (max-width: 480px) {
+	.colmar,
+	.academy {
+		display: none;
+	}
+
+	header {
+		display: block;
+	}
+
+	.forMobileSvgs {
+		align-self: center;
+		display: block;
+	}
+
+	header .logo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	nav {
+		display: none;
+	}
+}
+
 
 /*===============*/
 /*bannersection*/
@@ -126,6 +156,35 @@ a {
 	background-color: #4da6ff;
 }
 
+@media all and (max-width: 480px) {
+	#bannerId {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bannerText {
+		width: 100%;
+	}
+
+	.bannerSection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bannerText h2 {
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.bannerText h1 {
+		font-size: 1.1rem;
+		text-align: center;
+	}
+	
+}
+
 /*===============*/
 /*Information Section*/
 /*===============*/
@@ -134,11 +193,24 @@ a {
 	display: flex;
 }
 
+@media all and (max-width: 480px) {
+	#information {
+		border-bottom: 1px solid #cccccc;
+		margin: 0 10px 0 10px;
+	}
+}
+
 .infoSection {
 	display: flex;
 	flex-direction: column;
 	width: 65%;
 	margin: 32px 32px;
+}
+
+@media all and (max-width: 480px) {
+	.infoSection {
+		display: none;
+	}
 }
 
 .infoImgContainer,
@@ -150,18 +222,56 @@ a {
 	width: 100%;
 }
 
-.asideImg{
+.asideImgContainer{
 	width: 35%;
-	/*padding: 0 16px;*/
+	padding: 0 16px;
 }
 
-.asideImg img {
+@media all and (max-width: 480px) {
+	.infoBlockAsidePic {
+		display: none;
+	}
+
+	.asideImgContainer {
+		width: 100%;
+		padding: 16px 16px;
+	}
+}
+
+.mobileImgAside {
+	display: none;
+}
+
+@media all and (max-width: 480px) {
+	.mobileImgAside {
+		display: block;
+		width: 100%;
+	}
+}
+
+.asideImgContainer img {
 	width: 100%;
 }
 
 .infoAsideBlocks {
 	display: flex;
 	transition: background-color 750ms ease-in-out;
+}
+
+@media all and (max-width: 480px) {
+	.infoAsideBlocks {
+		display: block;
+		width: 90%;
+		align-self: center;
+	}
+
+	.asideImgContainer img {
+		border-radius: 3px;
+	}
+
+	.asideImgContainer {
+		width: 90%;
+	}
 }
 
 .infoAsideBlocks:hover {
@@ -172,6 +282,22 @@ a {
 	padding-top: 32px;
 	width: 40%;
 	border-left: 1px solid #e6e6e6;
+}
+
+@media all and (max-width: 480px) {
+	.asideInfo {
+		display: flex;
+		flex-direction: column;
+		border: none;
+	}
+
+	.asideInfo {
+		width: 100%;
+	}
+
+	.infoAsideBlocks:hover {
+		background-color: #fff;
+	}
 }
 
 .infoDescription {
@@ -187,6 +313,13 @@ a {
 
 .infoDescription p {
 	margin-bottom: 8px;
+}
+
+@media all and (max-width: 480px) {
+	.infoDescription {
+		width: 90%;
+		padding: 16px 0 64px 32px;
+	}
 }
 
 .asideImg {
@@ -219,6 +352,12 @@ a {
 	background-color: #e6e6e6;
 }
 
+@media all and (max-width: 480px) {
+	#courses {
+		background-color: #fff;
+	}
+}
+
 #courses h2 {
 	text-align: center;
 	font-size: 2.5rem;
@@ -240,12 +379,49 @@ a {
 }
 
 .courseInformation h4 {
+	font-size: 2.5rem;
 	font-weight: 500;
 	padding: 16px;
 }
 
 .courseInformation p {
 	padding: 16px;
+}
+
+@media all and (max-width: 480px) {
+	.img {
+		display: none;
+	}
+
+	.courseImageContainer {
+		margin: 5px;
+	}
+
+	.courseInformation {
+		background-color: #cccccc;
+		width: 90%;
+		margin: 0 auto;
+		border-radius: 3px;
+	}
+
+	.courseInformation h4 {
+		font-size: 1.5rem;
+		text-align: left;
+		padding: 24px 0 16px 16px;
+	}
+
+	.courseBannerImages {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		border-bottom: 1px solid #cccccc;
+		padding-bottom: 32px; 
+		margin: 16px 10px 10px 10px;
+	}
+
+	.courseInformation p {
+		display: none;
+	}
 }
 
 /*===============*/
@@ -284,6 +460,21 @@ video,
 	width: 60%;
 }
 
+@media all and (max-width: 480px) {
+	.video {
+		display: block;
+		width: 100%;
+	}
+
+	video {
+		margin: 0;
+	}
+
+	.videoParagraph {
+		display: none;
+	}
+}
+
 .videoContainer {
 	display: flex;
 }
@@ -315,6 +506,12 @@ video,
 	margin-left: 32px;
 }
 
+@media all and (max-width: 480px) {
+	.videoAsideContainer {
+		display: none;
+	}
+}
+
 .asideVideoImg {
 	padding: 16px;
 	width: 35%;
@@ -335,6 +532,8 @@ footer {
 	height: 64px;
 }
 
+
+
 footer p,
 .links {
 	font-size: 0.9rem;
@@ -343,6 +542,17 @@ footer p,
 
 .links a{
 	margin-right: 16px;
+}
+
+@media all and (max-width: 480px) {
+	.links {
+		display: none;
+	}
+
+	footer {
+		margin: 30px 10px 16px 10px;
+		height: auto;
+	}
 }
 
 
