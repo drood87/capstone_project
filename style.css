@@ -11,24 +11,23 @@ body {
 	color: #737373;
 }
 
-/*.siteContainer {
-	width: 960px;
-	margin: 0 auto;
+img {
+	border-radius: 3px;
 }
-*/
+
 /*===============*/
 /*header*/
 /*===============*/
 header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	height: 64px;
 }
 
-header .logo {
-	display: flex;
+.logo {
+	display: inline-flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 nav ul {
@@ -67,7 +66,7 @@ a {
 	color: #b3b3b3;
 }
 
-.forMobileSvgs {
+.mobileNav {
 	display: none;
 }
 
@@ -77,22 +76,27 @@ a {
 		display: none;
 	}
 
+	#logoimg {
+		height: auto;
+		margin: 0;
+	}
+
 	header {
 		display: block;
 	}
 
-	.forMobileSvgs {
-		align-self: center;
-		display: block;
-	}
-
-	header .logo {
+	.mobileNav {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
+		height: 64px;
 		align-items: center;
 	}
 
-	nav {
+	.logo {
+		display: none;
+	}
+
+	.mobileDiv {
 		display: none;
 	}
 }
@@ -117,6 +121,7 @@ a {
 
 .banner {
 	width: 100%;
+	border-radius: 3px;
 }
 
 .bannerText {
@@ -175,12 +180,22 @@ a {
 
 	.bannerText h2 {
 		font-size: 1rem;
-		text-align: center;
+		font-weight: 500;
 	}
 
 	.bannerText h1 {
-		font-size: 1.1rem;
-		text-align: center;
+		font-size: 2rem;
+		font-weight: 500;
+	}
+
+	.bannerImgContainer {
+		margin-bottom: 32px;
+		width: 100%;
+	}
+
+	.bannerText button {
+		width: 80%;
+		border-radius: 3px;
 	}
 	
 }
@@ -376,6 +391,12 @@ a {
 	background-color: #FFF;
 	max-width: 532px;
 	margin: 32px 0 32px 0;
+	border-radius: 3px;
+}
+
+.img img {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 }
 
 .courseInformation h4 {
